@@ -1,0 +1,30 @@
+@import '../variables';
+
+.news-section {
+  margin-top: 40px;
+
+  &__title {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 9px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 99px;
+      height: 5px;
+      background-color: $green-bg;
+    }
+  }
+
+  .col {
+    flex-basis: auto;
+    flex-grow: 2;
+    max-width: 50%;
+  }
+}

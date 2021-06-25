@@ -1,0 +1,63 @@
+@import '../variables';
+
+.news-item {
+  margin-bottom: 34px;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    a {
+      color: $green;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  &__text {
+    $lineHeight: 1.1em;
+    $clamp: 6;
+
+    margin-bottom: 15px;
+    font-size: 14px;
+    letter-spacing: .7px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    line-height: $lineHeight;
+    height: $lineHeight * $clamp;
+  }
+
+  &__date {
+    font-style: italic;
+    color: $green;
+    margin-bottom: 5px;
+  }
+
+  &__full-news {
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  &__date,
+  &__full-news {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,51 @@
+@import './variables';
+
+.pagination {
+  position: relative;
+  background: linear-gradient(-60deg,$gray-bg 49%,transparent 0);
+  margin-bottom: 26px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: $gray-bg;
+    right: calc((-100vw - -#{$lg}) / 2);
+    top: 0;
+    height: 100%;
+    width: calc((100vw - #{$lg}) / 2);
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+
+    li {
+      width: 39px;
+      height: 39px;
+      margin-right: 6px;
+      
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+
+        border: 2px solid $gray-bg;
+        font-size: 24px;
+        font-weight: 500;
+        color: $gray-bg;
+        text-align: center;
+      }
+    }
+
+    li.active {
+      a {
+        border: 2px solid $green;
+        color: $green;
+      }
+    }
+  }
+}

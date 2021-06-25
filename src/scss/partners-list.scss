@@ -1,0 +1,14 @@
+.partners-list {
+  margin-top: 70px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+  }
+}

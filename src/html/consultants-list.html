@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <body>
+    <div class="wrapper">
+      @@include('./header.html')
+
+      <main>
+        @@include('./header-baner.html', {
+          'title': 'ИНФОРМАЦИЯ О НАЛОГОВЫХ КОНСУЛЬТАНТАХ',
+        })
+        @@include('./stripes/strip-green-left.html')
+
+        <div class="container">
+          <div class="consultants-list">
+            <table class="consultants-list__table">
+              <tbody>
+                <thead>
+                  <tr>
+                    <th>№</th>
+                    <th>ФИО члена Палаты налоговых <br> консультантов</th>
+                    <th>Место проживания / <br> Место работы</th>
+                    <th>Телефонный номер</th>
+                    <th>Номер квалификационного аттестата <br> налогового консультанта</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td>1</td>
+                  <td>Абрамова Светлана Валентиновна</td>
+                  <td>Минский р-н,
+                    д. Копище</td>
+                  <td>+375 29 638 24 61	</td>
+                  <td>0000105</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Абрамович Елена Леонидовна</td>
+                  <td>г. Минск</td>
+                  <td>+375 29 370 32 96</td>
+                  <td>0000257</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Авчинникова Елена Николаевна</td>
+                  <td>г. Минск</td>
+                  <td>+375 29 160 45 36</td>
+                  <td>0000458</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Авчинникова Людмила Сергеевна</td>
+                  <td>г. Минск</td>
+                  <td>+375 29 646 83 45</td>
+                  <td>0000258</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+
+      @@include('./footer.html')
+    </div>
+  </body>
+  @@include('./utils/includies.html')
+</html>

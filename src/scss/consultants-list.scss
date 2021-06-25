@@ -1,0 +1,43 @@
+@import './variables';
+
+.consultants-list {
+  margin-top: 50px;
+
+  @media (max-width: 768px) {
+    overflow-x: scroll;
+  }
+
+  &__table {
+    width: 100%;
+
+    thead {
+      vertical-align: baseline;
+      border: 2px solid $gray-bg;
+
+      th {
+        padding: 0 5px;
+        border-right: 2px solid $gray-bg;
+        color: $green;
+      }
+
+      th:nth-last-child(1) {
+        border-right: none;
+      }
+    }
+
+    tbody {
+      tr:nth-child(2n) {
+        background-color: $light-gray-bg;
+        
+        td {
+          border-right: 2px solid $light-gray-bg;
+        }
+      }
+  
+      td {
+        padding: 16px 0;
+        text-align: center;
+      }
+    }
+  }
+}
