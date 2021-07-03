@@ -1,0 +1,43 @@
+@import './variables';
+
+.explanation-and-comments {
+  .text-about {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  hr {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    .list-item {
+      position: relative;
+      margin-bottom: 25px;
+      padding-left: 35px;
+
+      &__image {
+        position: absolute;
+        top: -3px;
+        left: 0;
+        width: 25px;
+        height: 25px;
+      }
+
+      &__title {
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      &__subtitle {
+        font-size: 0.875rem;
+        font-weight: 400;
+        font-style: italic;
+      }
+    }
+  }
+}

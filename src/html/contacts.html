@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e17152d6-4d45-4003-813a-796f37e53739&lang=ru-RU" type="text/javascript"></script>
+  <body>
+    <div class="wrapper">
+      @@include('./header.html')
+
+      <main>
+        <div id="map" style="height: 586px;"></div>
+
+        @@include('./stripes/strip-green-left.html')
+
+        <div class="container">
+          <div class="contacts">
+            <h2 class="contacts__title">ЕСЛИ У ВАС ЕСТЬ ВОПРОСЫ!</h2>
+
+            <p class="contacts__subtitle">
+              Напишите в форме обратной связи интересующие Вас вопросы, мы обязательно ответим на них.
+            </p>
+
+            <div class="contacts__form">
+              <form action="#">
+                <div class="row">
+                  <div class="col"><input type="text" placeholder="Имя"></div>
+                  <div class="col"><input type="tel" name="" id="" placeholder="Телефон"></div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <input type="email" name="" id="" placeholder="Email*">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                  </div>
+                </div>
+
+                <button class="submit-form-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      @@include('./footer.html')
+    </div>
+  </body>
+  @@include('./utils/includies.html')
+</html>

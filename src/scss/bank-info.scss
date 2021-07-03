@@ -5,15 +5,19 @@
   margin-bottom: 45px;
   padding: 0;
 
-  @media (max-width: $md) {
-    padding: 0 30px;
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0 15px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    padding: 0;
   }
 
   .about-tax {
     margin-right: 15px;
 
-    @media (max-width: $md) {
-      margin-right: 30px;
+    @media (max-width: $breakpoint-tablet) {
+      margin-right: 0;
     }
   }
 }

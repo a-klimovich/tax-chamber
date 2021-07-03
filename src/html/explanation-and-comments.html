@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <body>
+    <div class="wrapper">
+      @@include('./header.html')
+
+      <main>
+        @@include('./header-baner.html', {
+          'title': 'РАЗЪЯСНЕНИЯ И КОММЕНТАРИИ',
+        })
+        @@include('./stripes/strip-green-left.html')
+
+        <div class="container">
+          <div class="explanation-and-comments">
+            <p class="text-about">В настоящем разделе представлены разъяснения государственных органов по вопросам осуществления деятельности налоговых консультантов, <br>
+              а также публикации и комментарии специалистов
+            </p>
+
+            <hr class="hr-green">
+
+            <div class="explanation-and-comments__list">
+              <div class="list-item">
+                <div class="list-item__image"><img src="../assets/icons/download-arrow-down.svg" alt=""></div>
+                <p class="list-item__title"><a download="#">Договор страхования ответственности налогового консультанта: порядок уведомления о заключении</a></p>
+              </div>
+
+              <div class="list-item">
+                <div class="list-item__image"><img src="../assets/icons/download-arrow-down.svg" alt=""></div>
+                <p class="list-item__title"><a download="#">О порядке признания для целей налогообложения отдельных затрат (расходов), связанных с деятельностью по налоговому консультированию</a></p>
+              </div>
+
+              <div class="list-item">
+                <div class="list-item__image"><img src="../assets/icons/download-arrow-down.svg" alt=""></div>
+                <p class="list-item__title"><a download="#">Об обязанностях налоговых консультантов по выполнению требований законодательства по предотвращению легализации доходов, полученных преступным путем</a></p>
+                <p class="list-item__subtitle">Подробное руководство для тех, кто хотел бы получить квалификационный аттестат, составила налоговый консультант, член экспертного совета ПНК Ирина Клезович (Экономическая газета)</p>
+              </div>
+
+              <div class="list-item">
+                <div class="list-item__image"><img src="../assets/icons/download-arrow-down.svg" alt=""></div>
+                <p class="list-item__title"><a download="#">Как стать налоговым консультантом: пошаговый алгоритм</a></p>
+                <p class="list-item__subtitle">Об актуальных практических ситуациях при исчислении НДС рассказывает налоговый консультaнт Ирина Клезович, член экспертного совета ПНК <br> (Экономическая газета)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      @@include('./footer.html')
+    </div>
+  </body>
+  @@include('./utils/includies.html')
+</html>

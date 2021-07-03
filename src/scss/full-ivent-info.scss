@@ -1,3 +1,22 @@
+@import './variables';
+
 .full-ivent-info {
   margin-top: 70px;
+
+  .text {
+    margin-bottom: 30px;
+  }
+
+  hr {
+    margin-bottom: 70px;
+  }
+}
+
+hr {
+  height: 2px;
+  border: none;
+
+  &.hr-green {
+    background-color: $green;
+  }
 }

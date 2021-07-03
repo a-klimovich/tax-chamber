@@ -13,6 +13,10 @@
       text-align: center;
       font-size: 36px;
       color: $white;
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -65,5 +69,9 @@
     &::before {
       background: $green-bg;
     }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    display: none;
   }
 }
