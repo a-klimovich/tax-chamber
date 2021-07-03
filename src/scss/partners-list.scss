@@ -1,3 +1,5 @@
+@import './variables';
+
 .partners-list {
   margin-top: 70px;
 
@@ -10,5 +12,19 @@
   .col {
     display: flex;
     align-items: center;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 0;
+
+    &__title {
+      font-size: 13px;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    .row {
+      flex-direction: row;
+    }
   }
 }

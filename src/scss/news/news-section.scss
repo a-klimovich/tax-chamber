@@ -20,11 +20,34 @@
       height: 5px;
       background-color: $green-bg;
     }
+
+    @media (max-width: $breakpoint-tablet) {
+      padding-bottom: 13px;
+      margin-bottom: 13px;
+    }
   }
 
   .col {
     flex-basis: auto;
     flex-grow: 2;
     max-width: 50%;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 15px;
+
+    &__title {
+      font-size: 13px;
+      text-align: center;
+
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .col {
+      min-width: 100%;
+    }
   }
 }

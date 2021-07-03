@@ -1,5 +1,13 @@
 @import './variables';
 
+.contact-map {
+  height: 586px;
+
+  @media (max-width: $breakpoint-tablet) {
+    height: 358px;
+  }
+}
+
 .contacts {
   margin-top: 47px;
 
@@ -25,11 +33,20 @@
       height: 5px;
       background: $green-bg;
     }
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-bottom: 8px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 60px;
     text-align: center;
+
+    @media (max-width: $breakpoint-tablet) {
+      max-width: 600px;
+      margin: 0 auto 10px;
+    }
   }
 
   &__form {
@@ -58,6 +75,17 @@
           color: #545250;
           font-style: italic;
         }
+
+        @media (max-width: $breakpoint-tablet) {
+          height: 37px;
+          font-size: 14px;
+  
+          &::placeholder {
+            font-size: 14px;
+            color: #545250;
+            font-style: italic;
+          }
+        }
       }
     }
 
@@ -74,6 +102,17 @@
         font-style: italic;
         color: #545250;
       }
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 14px;
+        margin-bottom: 15px;
+
+        &::placeholder {
+          font-size: 14px;
+          color: #545250;
+          font-style: italic;
+        }
+      }
     }
 
     .submit-form-btn {
@@ -88,6 +127,10 @@
   
       padding: 15px 39px 20px 40px;
       cursor: pointer;
+
+      @media (max-width: $breakpoint-tablet) {
+        padding: 10px 14px;
+      }
     }
   }
 }

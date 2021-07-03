@@ -67,6 +67,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -15px;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
 }
 
 .col {
@@ -74,4 +78,8 @@ a {
   flex-grow: 1;
   max-width: 100%;
   padding: 0 15px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-bottom: 15px;
+  }
 }

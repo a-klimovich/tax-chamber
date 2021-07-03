@@ -1,0 +1,10 @@
+@import './variables';
+
+hr {
+  height: 2px;
+  border: none;
+
+  &.hr-green {
+    background-color: $green;
+  }
+}

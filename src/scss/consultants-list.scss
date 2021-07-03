@@ -2,40 +2,65 @@
 
 .consultants-list {
   margin-top: 50px;
+  margin-bottom: 40px;
 
-  @media (max-width: 768px) {
-    overflow-x: scroll;
-  }
+  overflow-x: auto;
 
   &__table {
     width: 100%;
-
+    
     thead {
+      position: relative;
       vertical-align: baseline;
+      white-space: nowrap;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 2px;
+        width: 100%;
+        background-color: $gray-bg;
+      }
 
       th {
+        position: relative;
+        height: 50px;
         padding: 0 5px;
-        border-right: 2px solid $gray-bg;
         color: $green;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: 0;
+          transform: translate(0, -50%);
+          width: 2px;
+          height: 90%;
+          background-color: $gray-bg;
+        }
       }
 
       th:nth-last-child(1) {
-        border-right: none;
+        &::after {
+          display: none;
+        }
       }
     }
 
     tbody {
       tr:nth-child(2n) {
         background-color: $light-gray-bg;
-        
-        td {
-          border-right: 2px solid $light-gray-bg;
-        }
       }
   
       td {
-        padding: 16px 0;
+        padding: 16px 5px;
         text-align: center;
+
+        a {
+          color: $black;
+        }
       }
     }
   }

@@ -16,4 +16,17 @@
     text-align: center;
     color: $white;
   }
+
+  @media (max-width: $breakpoint-tablet) {
+    height: 150px;
+
+    img {
+      height: 100%;
+    }
+
+    &__title {
+      top: 40%;
+      font-size: 18px;
+    }
+  }
 }

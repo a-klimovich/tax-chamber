@@ -2,6 +2,11 @@
 
 .full-ivent-info {
   margin-top: 70px;
+  margin-bottom: 30px;
+
+  ul {
+    padding-left: 20px;
+  }
 
   .text {
     margin-bottom: 30px;
@@ -9,14 +14,13 @@
 
   hr {
     margin-bottom: 70px;
+
+    @media (max-width: $breakpoint-tablet) {
+      margin-bottom: 50px;
+    }
   }
-}
 
-hr {
-  height: 2px;
-  border: none;
-
-  &.hr-green {
-    background-color: $green;
+  @media (max-width: $breakpoint-tablet) {
+    margin-top: 30px;
   }
 }

@@ -3,6 +3,10 @@
 .news-item {
   margin-bottom: 34px;
 
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 13px;
+  }
+
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -59,5 +63,20 @@
   &__full-news {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    &__title {
+      font-size: 13px;
+    }
+
+    &__text {
+      font-size: 11px;
+    }
+
+    &__date,
+    &__full-news {
+      font-size: 12px;
+    }
   }
 }

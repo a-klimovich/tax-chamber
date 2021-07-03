@@ -25,35 +25,37 @@
               </thead>
               
               <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>Абрамова Светлана Валентиновна</td>
-                  <td>Минский р-н,
-                    д. Копище</td>
-                  <td>+375 29 638 24 61	</td>
-                  <td>0000105</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Абрамович Елена Леонидовна</td>
-                  <td>г. Минск</td>
-                  <td>+375 29 370 32 96</td>
-                  <td>0000257</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Авчинникова Елена Николаевна</td>
-                  <td>г. Минск</td>
-                  <td>+375 29 160 45 36</td>
-                  <td>0000458</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Авчинникова Людмила Сергеевна</td>
-                  <td>г. Минск</td>
-                  <td>+375 29 646 83 45</td>
-                  <td>0000258</td>
-                </tr>
+                @@include('./table-tr-element.html', {
+                  'counterItem': '1',
+                  'fullName': 'Абрамова Светлана Валентиновна',
+                  'location': 'Минский р-н, д. Копище',
+                  'tel': '+375 29 638 24 61',
+                  'certificateNumber': '0000105'
+                })
+
+                @@include('./table-tr-element.html', {
+                  'counterItem': '2',
+                  'fullName': 'Абрамович Елена Леонидовна',
+                  'location': 'г. Минск',
+                  'tel': '+375 29 370 32 96',
+                  'certificateNumber': '0000257'
+                })
+
+                @@include('./table-tr-element.html', {
+                  'counterItem': '3',
+                  'fullName': 'Абрамова Светлана Валентиновна',
+                  'location': 'Минский р-н, д. Копище',
+                  'tel': '+375 29 160 45 36',
+                  'certificateNumber': '0000458'
+                })
+
+                @@include('./table-tr-element.html', {
+                  'counterItem': '4',
+                  'fullName': 'Абрамова Светлана Валентиновна',
+                  'location': 'Минский р-н, д. Копище',
+                  'tel': '+375 29 646 83 45',
+                  'certificateNumber': '0000258'
+                })
               </tbody>
             </table>
           </div>

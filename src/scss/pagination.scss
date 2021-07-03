@@ -48,4 +48,13 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-tablet) {
+    background: transparent;
+    margin-top: 35px;
+
+    ul {
+      justify-content: center;
+    }
+  }
 }

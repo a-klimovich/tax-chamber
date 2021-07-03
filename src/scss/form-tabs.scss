@@ -3,6 +3,10 @@
 .tabs {
   margin-bottom: 148px;
 
+  @media (max-width: $breakpoint-tablet) {
+    margin-bottom: 30px;
+  }
+
   .submit-form-btn {
     border: none;
 
@@ -12,8 +16,12 @@
     font-size: 18px;
     font-weight: 700;
 
-    padding: 15px 39px 20px 40px;
+    padding: 20px 40px;
     cursor: pointer;
+
+    @media (max-width: $breakpoint-tablet) {
+      padding: 10px 14px;
+    }
   }
 
   &__caption {
@@ -71,6 +79,17 @@
         color: #545250;
         font-style: italic;
       }
+
+      @media (max-width: $breakpoint-tablet) {
+        height: 37px;
+        font-size: 14px;
+
+        &::placeholder {
+          font-size: 14px;
+          color: #545250;
+          font-style: italic;
+        }
+      }
     }
 
     .custom-file-upload {
@@ -97,12 +116,29 @@
           font-style: italic;
           font-size: 16px;
         }
+
+        @media (max-width: $breakpoint-tablet) {
+          .btn {
+            font-size: 11px;
+            padding: 3px 8px;
+          }
+
+          .text {
+            font-size: 12px;
+          }
+        }
       }
 
       &__text {
         font-weight: 400;
         font-size: 12px;
         color: #545250;
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        &__text {
+          font-size: 8px;
+        }
       }
     }
 
@@ -130,6 +166,16 @@
         font-size: 18px;
         font-style: italic;
         color: #545250;
+      }
+
+      @media (max-width: $breakpoint-tablet) {
+        font-size: 14px;
+
+        &::placeholder {
+          font-size: 14px;
+          color: #545250;
+          font-style: italic;
+        }
       }
     }
   }
