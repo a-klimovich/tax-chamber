@@ -39,12 +39,28 @@
         color: $gray-bg;
         text-align: center;
       }
+
+      &.active {
+        a {
+          border: 2px solid $green;
+          color: $green;
+        }
+      }
     }
 
-    li.active {
-      a {
-        border: 2px solid $green;
-        color: $green;
+    @media (max-width: $breakpoint-mobile) {
+      li {
+        width: 21px;
+        height: 21px;
+        margin-right: 2px;
+  
+        a {
+          font-size: 16px;
+        }
+
+        svg {
+          width: 6px;
+        }
       }
     }
   }

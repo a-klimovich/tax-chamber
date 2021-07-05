@@ -1,3 +1,9 @@
+@import './variables';
+
 .events-list {
   margin-top: 50px;
+
+  @media (max-width: $breakpoint-mobile) {
+    margin-top: 20px;
+  }
 }

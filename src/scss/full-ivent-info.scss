@@ -23,4 +23,15 @@
   @media (max-width: $breakpoint-tablet) {
     margin-top: 30px;
   }
+
+  @media (max-width: $breakpoint-mobile) {
+    .text {
+      margin-bottom: 20px;
+      font-size: 11px;
+    }
+
+    hr {
+      margin-bottom: 20px;
+    }
+  }
 }

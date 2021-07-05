@@ -40,4 +40,14 @@
       }
     }
   }
+
+  @media (max-width: $breakpoint-mobile) {
+    font-size: 11px;
+    
+    .list-item {
+      &__subtitle {
+        font-size: 11px;
+      }
+    }
+  }
 }
