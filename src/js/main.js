@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.main-slider').slick({
-    // autoplay: true,
+    autoplay: true,
     arrows: false,
     dots: true,
     dotsClass: 'slider-dots',
@@ -41,4 +41,4 @@ if ($('#map').length) {
     });
     
   });
-  })(jQuery);
+})(jQuery);
