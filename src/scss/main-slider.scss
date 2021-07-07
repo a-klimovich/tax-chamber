@@ -1,6 +1,10 @@
 @import './variables';
 
 .main-slider {
+  @media (max-width: $breakpoint-mobile) {
+    display: none !important;
+  }
+
   .slide {
     display: flex !important;
     justify-content: center;

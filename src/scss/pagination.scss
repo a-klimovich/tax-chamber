@@ -10,10 +10,15 @@
     position: absolute;
     display: block;
     background: $gray-bg;
-    right: calc((-100vw - -#{$lg}) / 2);
+    right: calc((-100vw - -#{$lg} - 12px) / 2);
     top: 0;
     height: 100%;
-    width: calc((100vw - #{$lg}) / 2);
+    width: calc((100vw - #{$lg} + 12px) / 2);
+  }
+
+  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 15) {
+    background: linear-gradient(-60deg,$gray-bg 43%,transparent 0);
+    margin-right: -15px;
   }
 
   ul {

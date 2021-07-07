@@ -29,4 +29,42 @@
       font-size: 18px;
     }
   }
+
+  @media (max-width: $breakpoint-mobile) {
+    height: fit-content;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &__title {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0, 0);
+
+      font-size: 13px;
+      font-weight: 700;
+      color: $black;
+      
+      padding-bottom: 15px;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 99px;
+        height: 5px;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        background-color: #00b765;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
 }
