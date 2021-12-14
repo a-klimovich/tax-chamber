@@ -251,22 +251,6 @@
         border-top: 6px solid transparent;
 
         white-space: nowrap;
-        
-        &__arrow {
-          display: none;
-          position: relative;
-          
-          width: 10px;
-          height: 10px;
-          margin-left: 5px;
-          
-          border: 5px solid $green-bg;
-          border-left-color: transparent;
-          border-top-color: transparent;
-          
-          top: -5px;
-          transform: rotate(45deg);
-        }
 
         &:hover {
           border-bottom: 6px solid #00FF83;
@@ -306,8 +290,6 @@
           display: block;
           font-size: 13px;
 
-          border-bottom: 1px solid $gray-bg;
-
           &:nth-last-child(1) {
             border-bottom: 1px solid transparent;
           }
@@ -338,10 +320,10 @@
     .dropdown:hover .dropbtn {
       background-color: $green-bg;
 
-      &__arrow {
-        transform: rotate(225deg);
-        top: 2px;
-      }
+      // &__arrow {
+      //   transform: rotate(225deg);
+      //   top: 2px;
+      // }
     }
 
     .decor-left-rectangle {
@@ -369,12 +351,14 @@
         padding-left: 0;
         width: 100%;
         text-align: center;
+        background-color: #fff;
 
         .dropdown {
           width: 100%;
           border-bottom: 1px solid $gray-bg;
 
           .dropdown-content {
+            display: block;
             position: relative;
             font-size: 13px;
             line-height: 16px;
@@ -391,10 +375,12 @@
             color: $green-bg;
             border: 3px;
             font-weight: 700;
+            padding: 15px;
+            border-bottom: 1px solid #c4c4c4;
 
-            &__arrow {
-              display: inline-block;
-            }
+            // &__arrow {
+            //   display: inline-block;
+            // }
 
             &:hover {
               border: none;
@@ -464,7 +450,8 @@
         .dropdown-content {
           a {
             font-size: 11px;
-            padding: 2px 24px;
+            padding: 0 43px;
+            margin: 10px 0;
           }
         }
       }

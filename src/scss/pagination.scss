@@ -16,7 +16,7 @@
     width: calc((100vw - #{$lg} + 12px) / 2);
   }
 
-  @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop - 15) {
+  @media (min-width: $breakpoint-tablet) and (max-width: clac($breakpoint-desktop - 15px)) {
     background: linear-gradient(-60deg,$gray-bg 43%,transparent 0);
     margin-right: -15px;
   }
