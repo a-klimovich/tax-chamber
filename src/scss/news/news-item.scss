@@ -24,11 +24,11 @@
   }
 
   &__text {
-    $lineHeight: 1.1em;
+    $lineHeight: 1.4em;
     $clamp: 6;
 
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: 1rem;
     letter-spacing: .7px;
 
     overflow: hidden;
@@ -42,7 +42,7 @@
   &__date {
     font-style: italic;
     color: $green;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
   &__full-news {
@@ -67,16 +67,20 @@
 
   @media (max-width: $breakpoint-mobile) {
     &__title {
-      font-size: 13px;
+      font-size: 0.9rem;
     }
 
     &__text {
-      font-size: 11px;
+      font-size: 0.8rem;
+    }
+
+    &__date {
+      margin-bottom: 4px;
     }
 
     &__date,
     &__full-news {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
   }
 }

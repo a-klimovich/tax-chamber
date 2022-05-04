@@ -3,15 +3,18 @@
 .bank-info {
   margin-top: 20px;
   margin-bottom: 45px;
+  line-height: 1.4rem;
   padding: 0;
-
+  
   @media (max-width: $breakpoint-tablet) {
+    line-height: 1.3rem;
     padding: 0 15px;
   }
-
+  
   @media (max-width: $breakpoint-mobile) {
+    line-height: 1.05rem;
     text-align: center;
-    font-size: 11px;
+    font-size: 0.8rem;
     padding: 0;
     margin-bottom: 15px;
   }

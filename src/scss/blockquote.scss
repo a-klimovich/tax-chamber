@@ -1,0 +1,94 @@
+@import "./variables";
+
+blockquote {
+  display: block;
+  border-left: 5px solid #00b765;
+  font-style: italic;
+  margin: 16px;
+  padding: 16px 24px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -6px;
+    height: 40px;
+    background-color: #fff;
+    width: 6px;
+    margin-top: -1em;
+  }
+
+  &:after {
+    content: "”";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    color: #00b765;
+    font-size: 50px;
+    font-family: Times, sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.4em;
+  }
+
+  cite {
+    color: #00a05a;
+    font-size: 0.9rem;
+    padding-top: 10px;
+    display: block;
+    text-align: right;
+  }
+
+  @media (max-width: $breakpoint-tablet) {
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 3px solid #00b765;
+
+    p {
+      font-size: 1rem;
+    }
+
+    cite {
+      font-size: 0.8rem;
+    }
+
+    &::before {
+      top: 2rem;
+      height: 2.5rem;
+    }
+
+    &::after {
+      font-size: 40px;
+      top: 2rem;
+      left: -1rem;
+    }
+  }
+
+  @media (max-width: $breakpoint-mobile) {
+    margin: 0.6rem;
+    padding: 0.6rem;
+
+    p {
+      font-size: 0.8rem;
+    }
+
+    cite {
+      font-size: 0.7rem;
+    }
+
+    &::before {
+      height: 1.9rem;
+    }
+
+    &::after {
+      font-size: 30px;
+      top: 1.4rem;
+      left: -0.8rem;
+    }
+  }
+}
